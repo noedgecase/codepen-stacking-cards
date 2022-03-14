@@ -31,6 +31,26 @@
   --index: 4;
 }
 
+.badges {
+  position: sticky;
+  top: 0;
+  height: 100px;
+  margin-top: 150px;
+  flex: 0.8;
+  /* margin: 0 auto; */
+  display: flex;
+  justify-content: center;
+  background: white;
+  padding: 16px;
+}
+
+.badge-icon {
+  width: 50px;
+  height: 50px;
+  background: pink;
+  border: solid 2px black;
+}
+
 .card {
   position: sticky;
   top: 0;
@@ -117,6 +137,7 @@ header,
 main {
   width: 90%;
   margin: 0 auto;
+  display: flex;
 }
 
 header {
@@ -128,7 +149,7 @@ header {
 #cards {
   list-style: none;
   outline: calc(var(--outline-width) * 10) solid blue;
-
+  flex: 1;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(var(--numcards), var(--card-height));
